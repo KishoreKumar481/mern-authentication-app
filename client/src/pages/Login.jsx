@@ -26,6 +26,7 @@ export default function Login() {
 
                 if (data.success) {
                     setIsLoggedin(true)
+                    getUserData()
                     navigate('/')
                 } else {
                     toast.error(data.message)
